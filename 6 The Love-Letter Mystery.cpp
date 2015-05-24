@@ -9,23 +9,17 @@ int solve(string word) {
     int i = 0;
     int j = word.length() - 1;
     int totalCost = 0;
-    int cost = 0;
     while(i <= j) {
     	if(word[i] > word[j]) {
-    		cost = word[i] - word[j];
-    		totalCost += cost;
-    		i++;
-    		j--;
+    		totalCost += (word[i] - word[j]);
+    		i++; j--;
     	}
     	else if(word[j] > word[i]) {
-    		cost = word[j] - word[i];
-    		totalCost += cost;
-    		i++;
-    		j--;
+    		totalCost += (word[j] - word[i]);
+    		i++; j--;
     	}
     	else {
-    		i++;
-    		j--;
+    		i++; j--;
     	}
     }
     return totalCost;
