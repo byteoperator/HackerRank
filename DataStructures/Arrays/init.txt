@@ -1,0 +1,8 @@
+1. Arrays-Ds
+2. 2D Array-DS
+3. Dynamic Array
+4. Left Rotation
+5. Sparse Arrays
+
+More (added by me):
+6. Right Rotation
